@@ -13,6 +13,9 @@ suspend fun main() {
 }
 
 private suspend fun authenticateToMastodon() {
+    if (Foxy.authenticateExistingSession())
+        return
+
     Foxy.startOAuthFlow {
         instance = "koyu.space"
 
