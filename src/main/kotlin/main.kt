@@ -1,9 +1,10 @@
+import dev.hyperspace.foxy.Foxy
+import dev.hyperspace.foxy.models.Instance
+import dev.hyperspace.foxy.utils.aliases.Timeline
+import dev.hyperspace.foxy.utils.requests.FoxyInstanceScope
+import dev.hyperspace.foxy.utils.requests.FoxyTimelineScope
+import dev.hyperspace.foxy.utils.responses.MastodonResponse
 import io.ktor.http.*
-import models.Instance
-import utils.aliases.Timeline
-import utils.requests.FoxyInstanceScope
-import utils.requests.FoxyTimelineScope
-import utils.responses.MastodonResponse
 
 suspend fun main() {
     authenticateToMastodon()
